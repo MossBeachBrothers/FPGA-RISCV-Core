@@ -1,0 +1,6 @@
+Multi-Cycle RISCV Processor Core on FPGA 
+    -Supports Register to Register, Immediate, Store, Branch, 
+    Upper Immediate, and Jump Instructions 
+    -Implemented into Finite State Machine with define states as:
+        FETCH, DECODE, EXECUTE, READ MEMORY, WRITE MEMORY, WRITE_BACK
+        
