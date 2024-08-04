@@ -4,3 +4,25 @@ Multi-Cycle RISCV Processor Core on FPGA
     -Implemented into Finite State Machine with define states as:
         FETCH, DECODE, EXECUTE, READ MEMORY, WRITE MEMORY, WRITE_BACK
         
+    Between these pipeline stages, we define various submodules:
+
+    1. Instruction Fetch Unit (IFU)
+        Fetches instructions from instruction memory based on PC. 
+    2. Instruction Decode Unit (IDU)
+        Decodes fetched instruction to determine instruction type, operands, immediate
+    3. Register File (RF)
+        Reads and Writes to register
+    4. ALU (Arithmetic Logic Unit)
+        Performs arithmetic and logical operations based on control signals, operands
+    5. Memory Access Unit (MAU)
+        Handles Data memory read and write operations
+    6. Control Unit (CU)
+        Generates control signals based on state and instruction
+    7. Branch Unit (BU)
+        Handles branch decisions, calculates branch addresses
+    8. PC Update Unit (PC)
+        Updates PC based on control signals, branch/jump decisions
+
+
+
+        
